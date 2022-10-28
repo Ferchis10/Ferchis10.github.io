@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lucida Sans', 'sans-serif';
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color: #fff;
+}
+.header{
+    background-color: #9cd4ad;
+    color: #2d1e2f;
+    text-shadow: 5px 5px 10px rgba(252,246,177,255);
+    padding: 15px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul>li{
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #631007;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12)
+                0 1px 3px rgba(0, 0, 0, 0.24);
+}
+.menu ul>li:hover{
+    background-color: #d42713;
+}
+
+.section{
+    background-color: #f7b32b;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 20px 0px;
+}
+h1{
+    color: #2d1e2f;
+}
+p{
+    color: bold ;
+}
+
+
+.aside{
+    background-color: #d81159;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12)
+                0 1px 23px rgba(0, 0, 0, 0.24);
+}
+.footer{
+    background-color: rgb(58, 3, 3);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/*MOBILE*/
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and (min-width:600px ){
+   /*Tablets*/
+   .col-s-1 { width: 8.33%;}
+   .col-s-2 { width: 16.66%;}
+   .col-s-3 { width: 25%;}
+   .col-s-4 { width: 33.33%;}
+   .col-s-5 { width: 41.66%;}
+   .col-s-6 { width: 50%;}
+   .col-s-7 { width: 58.33%;}
+   .col-s-8 { width: 66.66%;}
+   .col-s-9 { width: 75%;}
+   .col-s-10 { width: 83.33%;}
+   .col-s-11 { width: 91.66%;}
+   .col-s-12 { width: 100%;}
+   
+   .header{
+    padding: 3px;
+   }
+   .footer{
+    padding: 3px;
+   }
+   .aside{
+    font-size: 12px;
+    padding: 3px;
+   }
+}
+@media only screen and (min-width:768px){
+    /*Escritorio*/
+    .col-1 { width: 8.33%;}
+    .col-2 { width: 16.66%;}
+    .col-3 { width: 25%;}
+    .col-4 { width: 33.33%;}
+    .col-5 { width: 41.66%;}
+    .col-6 { width: 50%;}
+    .col-7 { width: 58.33%;}
+    .col-8 { width: 66.66%;}
+    .col-9 { width: 75%;}
+    .col-10 { width: 83.33%;}
+    .col-11 { width: 91.66%;}
+    .col-12 { width: 100%;}
+}
+
+@media only screen and (orientation:portrait){
+    body{
+        background-color: #ffd4d4;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    body{
+        background-color: #f8e7aa ;
+    }
+}
